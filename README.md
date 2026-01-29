@@ -9,7 +9,7 @@ transform = transforms.Compose([transforms.Resize((40, 40)),transforms.ToTensor(
 train_dataset = datasets.ImageFolder("pneumonia_dataset/chest_xray/train",transform=transform)
 test_dataset = datasets.ImageFolder("pneumonia_dataset/chest_xray/test",transform=transform)
 ```
-The images were then fed to a scattering transform with $J=4, L=6$ [2]. A first base classifier is trained with logistic loss on $n_\psi$ samples from the training set, then used to select the $n_\gamma -n_\psi$ remaining samples with smallest predicted margin, where $n_\gamma$ is the total budget. A final classifier is then trained on the selected subset. Before each training, the datasets are balanced by up- (resp. down-) sampling the minority (resp. majority) class.
+then averaged over the first (channel axis). The images were then fed to a scattering transform with $J=4, L=6$ [2]. A first base classifier is trained with logistic loss on $n_\psi$ samples from the training set, then used to select the $n_\gamma -n_\psi$ remaining samples with smallest predicted margin, where $n_\gamma$ is the total budget. A final classifier is then trained on the selected subset. Before each training, the datasets are balanced by up- (resp. down-) sampling the minority (resp. majority) class.
 
 [1] Daniel S Kermany, Michael Goldbaum, Wenjia Cai, Carolina CS Valentim, Huiying Liang, Sally L Baxter, Alex McKeown, Ge Yang, Xiaokang Wu, Fangbing Yan, et al. <i>Identifying medical diagnoses and treatable diseases by image-based deep learning</i>. cell, 172(5):1122–1131, 2018.
 
