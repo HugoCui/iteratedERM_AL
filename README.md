@@ -1,7 +1,7 @@
 #Asymptotic theory of iterated ERMs, with applications to Active Learning
 
 Code for the paper : <i>Asymptotic Theory of iterated Empirical Risk Minimizations, with Applications to Active Learning</i> 
-<p align="center"><img src="figures/illus.jpg" alt="illus" width="600"/></center></p>
+<p align="center"><img src="illustration.jpg" alt="illus" width="600"/></center></p>
 
 - <tt>real_data_clean</tt> contains the code for the real data experiment, for the task of pneumonia diagnosis on chest X-ray scans [1]. The dataset was preprocessed using 
 ```
